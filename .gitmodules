@@ -1,0 +1,21 @@
+[submodule "CUtils.h"]
+	path = CUtils.h
+	url = git@gitlab.com:c-data-structures1/cutils.h.git
+[submodule "List.h"]
+	path = List.h
+	url = git@gitlab.com:c-data-structures1/list.h.git
+[submodule "Array.h"]
+	path = Array.h
+	url = git@gitlab.com:c-data-structures1/array.h.git
+[submodule "Shortlist.h"]
+	path = Shortlist.h
+	url = git@gitlab.com:c-data-structures1/shortlist.h.git
+[submodule "SymbleTable.h"]
+	path = SymbleTable.h
+	url = git@gitlab.com:c-data-structures1/symbletable.h.git
+[submodule "ArrayListConversionLib.h"]
+	path = ArrayListConversionLib.h
+	url = git@gitlab.com:c-data-structures1/arraylistconversionlib.h.git
+[submodule "BST.h"]
+	path = BST.h
+	url = git@gitlab.com:c-data-structures1/bst.h.git
