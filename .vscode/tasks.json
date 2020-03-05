@@ -1,0 +1,138 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Build linking libraries",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "${file}",
+        "${fileDirname}/*.o",
+        "${fileDirname}/**/*.o",
+        "-o",
+        "${workspaceFolder}/builds/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": {
+        "base": "$gcc",
+        "fileLocation": "autoDetect"
+      },
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "Build folder OLD",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "${fileDirname}/**.c",
+        "-o",
+        "${workspaceFolder}/builds/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": {
+        "base": "$gcc",
+        "fileLocation": "autoDetect"
+      },
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "Build",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${workspaceFolder}/builds/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": {
+        "base": "$gcc",
+        "fileLocation": "autoDetect"
+      },
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "Build library",
+      "command": "gcc",
+      "args": ["-o", "${fileBasenameNoExtension}.o", "-c", "${file}"],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": {
+        "base": "$gcc",
+        "fileLocation": "autoDetect"
+      },
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "Build all libraries in folder",
+      "command": "${workspaceFolder}/.vscode/compile_libraries.sh",
+      "args": ["${fileDirname}"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Build folder",
+      "command": "${workspaceFolder}/.vscode/compile_folder.sh",
+      "args": [
+        "${fileDirname}",
+        "${workspaceFolder}/builds/${fileBasenameNoExtension}"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Delete Libraries",
+      "command": "files=`find -L ${fileDirname} -name \"*.o\"`; rm ${files}",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Makeheaders",
+      "command": "${workspaceFolder}/.vscode/makeheaders.sh",
+      "args": ["${fileDirname}", "${fileBasenameNoExtension}"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "none",
+      "problemMatcher": []
+    },
+    {
+      "type": "shell",
+      "label": "Build folder clang",
+      "command": "clang",
+      "args": [
+        "-g",
+        "${fileDirname}/*.c",
+        "-o",
+        "${workspaceFolder}/builds/${fileBasenameNoExtension}",
+        "--debug"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": {
+        "base": "$gcc",
+        "fileLocation": "autoDetect"
+      },
+      "group": "build"
+    }
+  ]
+}
