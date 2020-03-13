@@ -22,3 +22,6 @@
 [submodule "BSTs/AdvancedBST.h"]
 	path = BSTs/AdvancedBST.h
 	url = git@gitlab.com:c-data-structures1/advancedbst.h.git
+[submodule ".vscode"]
+	path = .vscode
+	url = git@gitlab.com:c-data-structures1/.vscode.git
