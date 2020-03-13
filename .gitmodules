@@ -17,5 +17,5 @@
 	path = ArrayListConversionLib.h
 	url = git@gitlab.com:c-data-structures1/arraylistconversionlib.h.git
 [submodule "BST.h"]
-	path = BST.h
+	path = BSTs/BST.h
 	url = git@gitlab.com:c-data-structures1/bst.h.git
