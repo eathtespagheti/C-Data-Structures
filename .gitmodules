@@ -2,13 +2,13 @@
 	path = CUtils.h
 	url = git@gitlab.com:c-data-structures1/cutils.h.git
 [submodule "List.h"]
-	path = List.h
+	path = Lists/List.h
 	url = git@gitlab.com:c-data-structures1/list.h.git
 [submodule "Array.h"]
 	path = Array.h
 	url = git@gitlab.com:c-data-structures1/array.h.git
 [submodule "Shortlist.h"]
-	path = Shortlist.h
+	path = Lists/Shortlist.h
 	url = git@gitlab.com:c-data-structures1/shortlist.h.git
 [submodule "SymbleTable.h"]
 	path = SymbleTable.h
