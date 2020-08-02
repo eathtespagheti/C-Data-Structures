@@ -1,23 +1,23 @@
 #include "Integer.h"
 
-void setInt(integer i, int value) { *i = value; }
+void Integer__setInt(integer i, int value) { *i = value; }
 
-void setDouble(integer i, double value) { *i = (int)value; }
+void Integer__setDouble(integer i, double value) { *i = (int)value; }
 
-void setFloat(integer i, float value) { *i = (int)value; }
+void Integer__setFloat(integer i, float value) { *i = (int)value; }
 
-int getInt(integer i) { return (int)*i; }
+int Integer__getInt(integer i) { return (int)*i; }
 
-double getDouble(integer i) { return (double)getInt(i); }
-float getFloat(integer i) { return (float)getInt(i); }
-int getValue(integer i) { return getInt(i); }
+double Integer__getDouble(integer i) { return (double)Integer__getInt(i); }
+float Integer__getFloat(integer i) { return (float)Integer__getInt(i); }
+int Integer__getValue(integer i) { return Integer__getInt(i); }
 
-int getType() { return 0; }
+int Integer__getType() { return 0; }
 
-integer newInt(int value) {
+integer Integer__new(int value) {
     integer i = malloc(sizeof(*i));
-    setInt(i, value);
+    Integer__setInt(i, value);
     return i;
 }
 
-void freeInt(integer i) { free(i); }
+void Integer__free(integer i) { free(i); }
