@@ -6,8 +6,8 @@ Generate a new number, type it's specified with the following parameters
 1: Float
 2: Double
 */
-number Number__new(int type) {
-    number n  = malloc(sizeof(*n));
+Number Number__new(int type) {
+    Number n  = malloc(sizeof(*n));
     n->__TYPE = type;
     switch (type) {
         case 0: n->integerValue = 0; break;
@@ -24,16 +24,16 @@ number Number__new(int type) {
 /*
 Free memory allocated for number n
 */
-void Number__free(number n) {
+void Number__free(Number n) {
     if (n != NULL) { free(n); }
 }
 
-int Number__getType(number n) { return n->__TYPE; }
+int Number__getType(Number n) { return n->__TYPE; }
 
 /*
 Return number value, if unset return 0
 */
-double Number__getValue(number n) {
+double Number__getValue(Number n) {
     switch (Number__getType(n)) {
         case 0: return (double)n->integerValue;
 
@@ -45,23 +45,23 @@ double Number__getValue(number n) {
     }
 }
 
-int Number__getInt(number n) { return (int)Number__getValue(n); }
+int Number__getInt(Number n) { return (int)Number__getValue(n); }
 
-float Number__getFloat(number n) { return (float)Number__getValue(n); }
+float Number__getFloat(Number n) { return (float)Number__getValue(n); }
 
-double getDoubleNumber(number n) { return (double)Number__getValue(n); }
+double getDoubleNumber(Number n) { return (double)Number__getValue(n); }
 
-void Number__setInt(number n, int value) {
+void Number__setInt(Number n, int value) {
     n->__TYPE       = 0;
     n->integerValue = value;
 }
 
-void Number__setFloat(number n, float value) {
+void Number__setFloat(Number n, float value) {
     n->__TYPE     = 1;
     n->floatValue = value;
 }
 
-void Number__setDouble(number n, double value) {
+void Number__setDouble(Number n, double value) {
     n->__TYPE      = 2;
     n->doubleValue = value;
 }

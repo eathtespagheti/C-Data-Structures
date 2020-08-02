@@ -4,7 +4,7 @@
 int main(int argc, char const *argv[]) {
     IntegerLib integers = newIntegerLib();
 
-    integer n = integers.new(0);
+    Integer n = integers.new(0);
     printf("Value now it's %d of type %d\n", integers.getInt(n),
            integers.getType(n));
 

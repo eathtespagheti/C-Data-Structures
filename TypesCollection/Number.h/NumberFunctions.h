@@ -5,16 +5,16 @@
 #include "Number.h"
 
 typedef struct NumberFunctionsStruct {
-    void (*setDouble)(number n, double value);
-    void (*setFloat)(number n, float value);
-    void (*setInt)(number n, int value);
-    double (*getDouble)(number n);
-    float (*getFloat)(number n);
-    int (*getInt)(number n);
-    double (*getValue)(number n);
-    int (*getType)(number n);
-    void (*free)(number n);
-    number (*new)(int type);
+    void (*setDouble)(Number n, double value);
+    void (*setFloat)(Number n, float value);
+    void (*setInt)(Number n, int value);
+    double (*getDouble)(Number n);
+    float (*getFloat)(Number n);
+    int (*getInt)(Number n);
+    double (*getValue)(Number n);
+    int (*getType)(Number n);
+    void (*free)(Number n);
+    Number (*new)(int type);
 } NumberFunctions;
 
 // * EDNT

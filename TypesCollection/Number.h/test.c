@@ -4,7 +4,7 @@
 int main(int argc, char const *argv[]) {
     NumberFunctions nf = newNumberFunctions();
 
-    number n = nf.new(0);
+    Number n = nf.new(0);
     printf("Value now it's %d of type %d\n", nf.getInt(n), nf.getType(n));
 
     nf.setInt(n, 5);

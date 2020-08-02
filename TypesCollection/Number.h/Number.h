@@ -12,7 +12,7 @@ typedef struct Number {
     };
 
     int __TYPE;
-} * number;
+} * Number;
 
 // * EDNT
 

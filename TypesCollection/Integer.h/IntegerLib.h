@@ -5,15 +5,15 @@
 #include "Integer.h"
 
 typedef struct IntegerLibStruct {
-    void (*setDouble)(integer, double value);
-    void (*setFloat)(integer, float value);
-    void (*setInt)(integer, int value);
-    double (*getDouble)(integer);
-    float (*getFloat)(integer);
-    int (*getInt)(integer);
-    int (*getType)(integer);
-    void (*free)(integer);
-    integer (*new)(int type);
+    void (*setDouble)(Integer, double value);
+    void (*setFloat)(Integer, float value);
+    void (*setInt)(Integer, int value);
+    double (*getDouble)(Integer);
+    float (*getFloat)(Integer);
+    int (*getInt)(Integer);
+    int (*getType)(Integer);
+    void (*free)(Integer);
+    Integer (*new)(int type);
 } IntegerLib;
 
 // * EDNT

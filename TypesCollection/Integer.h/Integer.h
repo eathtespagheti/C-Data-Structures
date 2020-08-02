@@ -3,7 +3,7 @@
 
 // * DNT
 #include <stdlib.h>
-typedef int *integer;
+typedef int *Integer;
 
 // * EDNT
 
