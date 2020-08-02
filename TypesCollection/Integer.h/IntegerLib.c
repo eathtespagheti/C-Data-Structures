@@ -4,15 +4,10 @@
 IntegerLib newIntegerLib() {
     IntegerLib l;
 
-    l.free      = &Integer__free;
-    l.getDouble = &Integer__getDouble;
-    l.getFloat  = &Integer__getFloat;
-    l.getInt    = &Integer__getInt;
-    l.getType   = &Integer__getType;
-    l.new       = &Integer__new;
-    l.setDouble = &Integer__setDouble;
-    l.setFloat  = &Integer__setFloat;
-    l.setInt    = &Integer__setInt;
+    l.free     = &Integer__free;
+    l.new      = &Integer__new;
+    l.setValue = &Integer__setValue;
+    l.getValue = &Integer__getValue;
 
     return l;
 }
