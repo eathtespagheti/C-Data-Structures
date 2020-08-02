@@ -3,15 +3,15 @@
 
 NumberFunctions newNumberFunctions() {
     NumberFunctions nf;
-    nf.freeNumber = &freeNumber;
-    nf.getDouble  = &getDouble;
-    nf.getFloat   = &getFloat;
-    nf.getInt     = &getInt;
-    nf.getType    = &getType;
-    nf.getValue   = &getValue;
-    nf.newNumber  = &newNumber;
-    nf.setDouble  = &setDouble;
-    nf.setFloat   = &setFloat;
-    nf.setInt     = &setInt;
+    nf.new       = &Number__new;
+    nf.getDouble = &getDoubleNumber;
+    nf.getFloat  = &Number__getFloat;
+    nf.getInt    = &Number__getInt;
+    nf.getType   = &Number__getType;
+    nf.getValue  = &Number__getValue;
+    nf.setDouble = &Number__setDouble;
+    nf.setFloat  = &Number__setFloat;
+    nf.setInt    = &Number__setInt;
+    nf.free      = &Number__free;
     return nf;
 }

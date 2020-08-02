@@ -6,9 +6,9 @@
 
 typedef struct Number {
     union {
-        int i;
-        float f;
-        double d;
+        int integerValue;
+        float floatValue;
+        double doubleValue;
     };
 
     int __TYPE;

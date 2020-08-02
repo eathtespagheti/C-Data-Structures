@@ -13,8 +13,8 @@ typedef struct NumberFunctionsStruct {
     int (*getInt)(number n);
     double (*getValue)(number n);
     int (*getType)(number n);
-    void (*freeNumber)(number n);
-    number (*newNumber)(int type);
+    void (*free)(number n);
+    number (*new)(int type);
 } NumberFunctions;
 
 // * EDNT
