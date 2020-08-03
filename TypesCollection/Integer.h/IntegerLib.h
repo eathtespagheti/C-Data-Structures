@@ -9,6 +9,7 @@ typedef struct IntegerLibStruct {
     int (*getValue)(Integer);
     void (*free)(Integer);
     Integer (*new)(int type);
+    Integer *(*arrayConversion)(int *array, int length);
 } IntegerLib;
 
 // * EDNT
