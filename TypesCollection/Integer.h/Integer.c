@@ -11,3 +11,11 @@ Integer Integer__new(int value) {
 }
 
 void Integer__free(Integer i) { free(i); }
+
+Integer Integer__parse(char *s) {
+    int i;
+    sscanf(s, "%d", &i);
+    return Integer__new(i);
+}
+
+void Integer__print(Integer i) { printf("%d ", Integer__getValue(i)); }

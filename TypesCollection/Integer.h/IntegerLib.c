@@ -19,6 +19,8 @@ IntegerLib newIntegerLib() {
     l.setValue        = &Integer__setValue;
     l.getValue        = &Integer__getValue;
     l.arrayConversion = &arrayConversion;
+    l.print           = &Integer__print;
+    l.parse           = &Integer__parse;
 
     return l;
 }
