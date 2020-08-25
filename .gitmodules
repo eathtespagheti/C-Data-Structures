@@ -28,3 +28,6 @@
 [submodule "TypesCollection/Integer.h"]
 	path = TypesCollection/Integer.h
 	url = https://gitlab.com/c-data-structures1/integer.h.git
+[submodule "Heap.h"]
+	path = Heap.h
+	url = https://gitlab.com/c-data-structures1/heap.h.git
