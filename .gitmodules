@@ -25,3 +25,6 @@
 [submodule ".vscode"]
 	path = .vscode
 	url = git@gitlab.com:c-data-structures1/.vscode.git
+[submodule "TypesCollection/Integer.h"]
+	path = TypesCollection/Integer.h
+	url = https://gitlab.com/c-data-structures1/integer.h.git
